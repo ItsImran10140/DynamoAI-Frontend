@@ -1,0 +1,9 @@
+export { HeaderSection } from "./HeaderSection";
+export { HeroSection } from "./HeroSection";
+export { TrustedBySection } from "./TrustedBySection";
+export { APIIntegrationSection } from "./APIIntegrationSection";
+export { ContentCreationSection } from "./ContentCreationSection";
+export { TestimonialsSection } from "./TestimonialSection";
+export { FeaturesGridSection } from "./FeaturesGridSection";
+export { FAQSection } from "./FAQSection";
+export { FooterSection } from "./FooterSection";
