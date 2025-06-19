@@ -27,25 +27,23 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({
 }) => {
   // Default data if no props provided
   const defaultLeftToRightCards: CarouselCard[] = [
-    { id: 1, color: "bg-stone-700/20", title: "Card 1" },
-    { id: 2, color: "bg-stone-700/20", title: "Card 2" },
-    { id: 3, color: "bg-stone-700/20", title: "Card 3" },
-    { id: 4, color: "bg-stone-700/20", title: "Card 4" },
-    { id: 5, color: "bg-stone-700/20", title: "Card 5" },
-    { id: 6, color: "bg-stone-700/20", title: "Card 6" },
-    { id: 7, color: "bg-stone-700/20", title: "Card 7" },
-    { id: 8, color: "bg-stone-700/20", title: "Card 8" },
+    { id: 1, color: "bg-stone-700/20", title: "Geometric Proofs" },
+    { id: 2, color: "bg-stone-700/20", title: "Function Graphing" },
+    { id: 3, color: "bg-stone-700/20", title: "Calculus Concepts" },
+    { id: 4, color: "bg-stone-700/20", title: "Statistics Viz" },
+    { id: 5, color: "bg-stone-700/20", title: "Linear Algebra" },
+    { id: 6, color: "bg-stone-700/20", title: "Physics Simulations" },
+    { id: 7, color: "bg-stone-700/20", title: "Custom Animations" },
   ];
 
   const defaultRightToLeftCards: CarouselCard[] = [
-    { id: 9, color: "bg-stone-700/20", title: "Card A" },
-    { id: 10, color: "bg-stone-700/20", title: "Card B" },
-    { id: 11, color: "bg-stone-700/20", title: "Card C" },
-    { id: 12, color: "bg-stone-700/20", title: "Card D" },
-    { id: 13, color: "bg-stone-700/20", title: "Card E" },
-    { id: 14, color: "bg-stone-700/20", title: "Card F" },
-    { id: 15, color: "bg-stone-700/20", title: "Card G" },
-    { id: 16, color: "bg-stone-700/20", title: "Card H" },
+    { id: 9, color: "bg-stone-700/20", title: "Function Graphing" },
+    { id: 10, color: "bg-stone-700/20", title: "Geometric Proofs" },
+    { id: 11, color: "bg-stone-700/20", title: "Calculus Concepts" },
+    { id: 12, color: "bg-stone-700/20", title: " Statistics Viz" },
+    { id: 13, color: "bg-stone-700/20", title: "Linear Algebra" },
+    { id: 14, color: "bg-stone-700/20", title: "Physics Simulations" },
+    { id: 15, color: "bg-stone-700/20", title: "Custom Animations" },
   ];
 
   const leftCards = leftToRightCards || defaultLeftToRightCards;
@@ -56,7 +54,7 @@ const InfiniteCarousel: React.FC<InfiniteCarouselProps> = ({
       {cards.map((card) => (
         <div
           key={card.id}
-          className={`${card.color} ${cardWidth} ${cardHeight} flex-shrink-0 ${gap} rounded-lg flex items-center justify-center text-white font-semibold text-lg shadow-lg border border-neutral-600/25`}
+          className={`${card.color} ${cardWidth} ${cardHeight} flex-shrink-0 ${gap} rounded-lg flex items-center justify-center  font-semibold text-lg shadow-lg border border-neutral-600/25 text-neutral-500`}
         >
           {card.title}
         </div>
