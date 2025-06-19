@@ -8,7 +8,7 @@ import NewLandingPage from "./components/LandingPage/NewLandingPage";
 
 function App() {
   return (
-    <GoogleOAuthProvider clientId={process.env.GOOGLE_CLIENT_ID || ""}>
+    <GoogleOAuthProvider clientId={process.env.VITE_GOOGLE_CLIENT_ID || ""}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NewLandingPage />} />

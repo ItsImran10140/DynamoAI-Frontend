@@ -15,7 +15,7 @@ export const TrustedBySection = () => {
       className="mt-[62px]"
     >
       <img
-        className="w-full h-full object-contain z-0 border-[0.75px] border-neutral-700"
+        className="w-full h-full object-contain z-0 border-[0.75px] border-neutral-700/40"
         src="/saas.png"
         alt="saas"
       />

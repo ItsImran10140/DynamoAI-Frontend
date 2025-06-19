@@ -28,7 +28,7 @@ export const FooterSection = () => {
             variants={fadeInUpAnimation}
             className="text-neutral-200 text-md font-semibold mb-8"
           >
-            Luna Free Cloneable
+            Dynamoo Free Cloneable
           </motion.h1>
 
           <motion.div
@@ -37,7 +37,7 @@ export const FooterSection = () => {
           >
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Australia - Brisbane 2000</span>
+              <span>India - Madhya Pradesh</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
@@ -45,7 +45,7 @@ export const FooterSection = () => {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>hello@luna.com</span>
+              <span className="text-sm">imranshah10140@gmail.com</span>
             </div>
           </motion.div>
 
@@ -136,7 +136,7 @@ export const FooterSection = () => {
             <div className="max-w-md">
               <motion.div variants={fadeInUpAnimation} className="mb-6">
                 <span className="text-gray-400 text-sm font-medium bg-stone-600/20 border-[0.75px] border-zinc-500/30 shadow-inner shadow-stone-800 rounded-full py-1 px-3">
-                  Luna Template
+                  Dynamoo Template
                 </span>
               </motion.div>
 

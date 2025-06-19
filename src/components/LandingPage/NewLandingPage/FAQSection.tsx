@@ -13,44 +13,44 @@ export const FAQSection = () => {
   const [faqItems, setFaqItems] = useState<FAQItem[]>([
     {
       id: 1,
-      question: "What is an AI Writing Tool used for?",
+      question: " Do I need programming experience to use this tool ?",
       answer:
-        "AI Writing Tools are designed to assist with various writing tasks including content creation, editing, grammar checking, and generating ideas. They help streamline the writing process and improve productivity.",
+        "Not at all! Simply describe what you want to animate in plain English, and our AI generates the code and animation for you.",
       isExpanded: false,
     },
     {
       id: 2,
-      question: "Is the generated content customizable?",
+      question: "What types of mathematical concepts can I animate ?",
       answer:
-        "Yes, the generated content is fully customizable. You can edit, modify, and adjust the output to match your specific requirements and brand voice.",
+        "Everything from basic algebra to advanced calculus, linear algebra, statistics, geometry, and more. If it's mathematical, we can animate it.",
       isExpanded: false,
     },
     {
       id: 3,
-      question: "How does it work?",
+      question: "Can I export my animations ?",
       answer:
-        "The AI writing tool uses advanced natural language processing to understand your input and generate relevant content based on your requirements and context.",
+        "Yes! Export high-quality MP4 videos perfect for presentations, YouTube videos, or educational materials.",
       isExpanded: false,
     },
     {
       id: 4,
-      question: "Can I integrate the tool?",
+      question: "How does the AI understand mathematical concepts ?",
       answer:
-        "Yes, our tool offers various integration options including API access, plugins, and direct integrations with popular platforms and workflows.",
+        "Our AI is trained on mathematical notation, concepts, and educational best practices, allowing it to create accurate and pedagogically sound animations.",
       isExpanded: false,
     },
     {
       id: 5,
-      question: "Can I use it for multiple languages?",
+      question: " Is there a limit to animation length ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nulla lacinia, vulputate mauris eget, accumsan justo.",
-      isExpanded: true,
+        "Free accounts can create animations up to 30 seconds. Premium accounts have no limits.",
+      isExpanded: false,
     },
     {
       id: 6,
-      question: "How secure is my content?",
+      question: "Can I customize the animations ?",
       answer:
-        "We take security seriously with end-to-end encryption, secure data storage, and strict privacy policies to protect your content and personal information.",
+        "Yes! You can modify colors, speed, style, and add text or narration to match your specific needs.",
       isExpanded: false,
     },
   ]);
@@ -82,8 +82,7 @@ export const FAQSection = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
-            nulla lacinia, vulputate mauris eget, accumsan justo.
+            Question's we get a lot
           </p>
         </motion.div>
 
