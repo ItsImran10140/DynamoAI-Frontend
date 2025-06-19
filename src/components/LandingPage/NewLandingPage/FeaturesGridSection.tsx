@@ -25,7 +25,27 @@ const Icons = [
       "Generate professional mathematical animations for YouTube videos, online courses, educational content, and social media without expensive software or coding skills.",
   },
 ];
-const Icons2 = ["/Icon5.webp", "/Icon6.webp", "/Icon5.webp"];
+const Icons2 = [
+  {
+    icon: "/Icon5.webp",
+    title: "For Researchers",
+    description:
+      "Communicate complex mathematical research findings through clear visual presentations. Perfect for conferences, papers, and grant proposals that require visual clarity.",
+  },
+  {
+    icon: "/Icon6.webp",
+    title: "For Tutors & Coaches",
+    description:
+      "Help students overcome math anxiety with engaging visual explanations. Create custom animations that break down problems step-by-step for individual learning needs.",
+  },
+  {
+    icon: "/Icon5.webp",
+    title: "For Textbook Authors",
+    description:
+      "Enhance educational materials with interactive visual content. Create supplementary animations that bring static diagrams and equations to life for modern learners.",
+  },
+];
+// const Icons2 = ["/Icon5.webp", "/Icon6.webp", "/Icon5.webp"];
 // const Images = ["/icon1.png", "/icon2.png", "/icon3.png"];
 // Create engaging lecture materials, visual proofs, and concept
 //                   explanations that help students grasp difficult mathematical
@@ -91,8 +111,8 @@ export const FeaturesGridSection = () => {
             variants={fadeInUpAnimation}
             className="mt-20 pt-10 flex border-t border-neutral-600/30"
           >
-            {Icons2.map((item) => (
-              <div key={item} className="w-[33%] h-full p-4">
+            {Icons2.map((item, i) => (
+              <div key={i} className="w-[33%] h-full p-4">
                 <div className="w-full bg-neutral-800/20 mr-16">
                   <div className="h-[40%] border-[0.75px] border-neutral-600/30 rounded-xl">
                     <div className="mb-4 flex">
@@ -101,15 +121,12 @@ export const FeaturesGridSection = () => {
                         <div className="h-[12px] bg-gradient-to-tr from-orange-300 to bg-purple-400 w-10 blur-lg"></div>
                       </div>
                       <div className="w-10 h-10 ml-[-40px] mt-3 rounded-md border-[0.75px] border-neutral-600/70 flex justify-center items-center p-1">
-                        <img src={item} alt="Icons" />
+                        <img src={item.icon} alt="Icons" />
                       </div>
-                      <p className="my-4 ml-4 text-xl">
-                        Integrate API driven AI
-                      </p>
+                      <p className="my-4 ml-4 text-xl">{item.title}</p>
                     </div>
                     <p className="ml-4 text-neutral-500 mb-4 text-sm">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Morbi vitae nulla lacinia, vulputate mauris eget.
+                      {item.description}
                     </p>
                   </div>
                 </div>

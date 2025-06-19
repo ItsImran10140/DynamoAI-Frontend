@@ -151,10 +151,10 @@ export const FooterSection = () => {
 
               <motion.p
                 variants={fadeInUpAnimation}
-                className="text-gray-400 mb-8 leading-relaxed"
+                className="text-gray-400 mb-8 leading-relaxed text-sm"
               >
-                Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit.
-                Etiam vehicula.
+                Create unlimited professional math animations with full AI
+                features - no commitment required.
               </motion.p>
 
               <div className="space-y-4">
@@ -162,7 +162,7 @@ export const FooterSection = () => {
                   <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                   <input
                     type="email"
-                    placeholder="john@flowbase.co"
+                    placeholder="imran@gamil.com"
                     className="rounded-full py-2 w-72 pl-12 bg-stone-600/20 border-[0.75px] border-zinc-500/30 shadow-inner shadow-stone-800 outline-none"
                   />
                 </motion.div>

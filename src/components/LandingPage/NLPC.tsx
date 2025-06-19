@@ -20,7 +20,7 @@ export const NewLandingPageComponent: React.FC<
   NewLandingPageComponentProps
 > = ({ image1, image2 }: any) => {
   const [stars, setStars] = useState<Star[]>([]);
-  const [images, setImages] = useState(image1);
+  const [images] = useState(image1);
 
   useEffect(() => {
     // Generate random stars

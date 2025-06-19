@@ -12,7 +12,7 @@ interface CodeSectionProps {
   runningCode: boolean;
   responseLog: string;
   prompt: string;
-  logContainerRef: React.RefObject<HTMLDivElement>;
+  logContainerRef: React.RefObject<HTMLDivElement | null>;
   editorRef: React.RefObject<any>;
   onCodeChange: (value: string | undefined) => void;
   onSaveCode: () => void;

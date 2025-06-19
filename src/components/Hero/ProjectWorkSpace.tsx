@@ -19,7 +19,8 @@ const ProjectWorkspace: React.FC = () => {
     usePromptGeneration();
   const { message, showMessage } = useStatusMessage();
 
-  const logContainerRef = useRef<HTMLDivElement>(null);
+  const logContainerRef = useRef<HTMLDivElement>(null!);
+  // logContainerRef: React.RefObject<HTMLDivElement | null>;
 
   useEffect(() => {
     if (logContainerRef.current) {
