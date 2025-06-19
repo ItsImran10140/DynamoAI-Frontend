@@ -10,7 +10,7 @@ import LogIn from "../auth/LogIn";
 import NewLandingPage from "../components/LandingPage/NewLandingPage";
 
 const GoogleWrapper = ({ children }: any) => (
-  <GoogleOAuthProvider clientId={process.env.GOOGLE_CLIENT_ID || ""}>
+  <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID || ""}>
     {children}
   </GoogleOAuthProvider>
 );
