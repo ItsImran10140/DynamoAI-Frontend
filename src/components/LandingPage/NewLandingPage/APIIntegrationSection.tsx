@@ -53,7 +53,6 @@ export const APIIntegrationSection = () => {
             AI understands mathematical language <br />
             and creates precise, educational animations that make abstract
             concepts tangible and engaging.
-            {/* From calculus derivatives to complex geometric transformations, our AI understands mathematical language and creates precise, educational animations that make abstract concepts tangible and engaging. */}
           </p>
         </motion.div>
 
