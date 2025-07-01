@@ -18,7 +18,7 @@ const NewLandingPage = () => {
     <>
       <NewLandingPageComponent image1={"/glow4.webp"} image2={"/glow1.webp"} />
 
-      <div className="text-white absolute top-0 border-[0.75px] border-neutral-700/40 h-[150%] w-[85%] mx-4 sm:mx-8 md:mx-16 lg:mx-20 xl:mx-28">
+      <div className="text-white absolute top-0 border-[px] border-neutral-700/40 h-[150%] w-[85%] mx-4 sm:mx-8 md:mx-16 lg:mx-20 xl:mx-28">
         <HeaderSection />
         <HeroSection />
         <TrustedBySection />
