@@ -13,42 +13,42 @@ export const FAQSection = () => {
   const [faqItems, setFaqItems] = useState<FAQItem[]>([
     {
       id: 1,
-      question: " Do I need programming experience to use this tool ?",
+      question: "Do I need programming experience to use this tool?",
       answer:
         "Not at all! Simply describe what you want to animate in plain English, and our AI generates the code and animation for you.",
       isExpanded: false,
     },
     {
       id: 2,
-      question: "What types of mathematical concepts can I animate ?",
+      question: "What types of mathematical concepts can I animate?",
       answer:
         "Everything from basic algebra to advanced calculus, linear algebra, statistics, geometry, and more. If it's mathematical, we can animate it.",
       isExpanded: false,
     },
     {
       id: 3,
-      question: "Can I export my animations ?",
+      question: "Can I export my animations?",
       answer:
         "Yes! Export high-quality MP4 videos perfect for presentations, YouTube videos, or educational materials.",
       isExpanded: false,
     },
     {
       id: 4,
-      question: "How does the AI understand mathematical concepts ?",
+      question: "How does the AI understand mathematical concepts?",
       answer:
         "Our AI is trained on mathematical notation, concepts, and educational best practices, allowing it to create accurate and pedagogically sound animations.",
       isExpanded: false,
     },
     {
       id: 5,
-      question: " Is there a limit to animation length ?",
+      question: "Is there a limit to animation length?",
       answer:
         "Free accounts can create animations up to 30 seconds. Premium accounts have no limits.",
       isExpanded: false,
     },
     {
       id: 6,
-      question: "Can I customize the animations ?",
+      question: "Can I customize the animations?",
       answer:
         "Yes! You can modify colors, speed, style, and add text or narration to match your specific needs.",
       isExpanded: false,
@@ -73,23 +73,23 @@ export const FAQSection = () => {
       ref={ref}
       animate={isInView ? "show" : "hidden"}
       variants={fadeInUpAnimation}
-      className=" pb-20 border-x border-b border-neutral-600/30 pt-20"
+      className="pb-10 md:pb-20 border-x border-b border-neutral-600/30 pt-10 md:pt-20 px-4 md:px-8"
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
-        <motion.div variants={fadeInUpAnimation} className="mb-16">
-          <h1 className="text-5xl bg-gradient-to-t from-zinc-500 to-zinc-300 bg-clip-text text-transparent mb-5 tracking-tight">
+        <motion.div variants={fadeInUpAnimation} className="mb-8 md:mb-16">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl bg-gradient-to-t from-zinc-500 to-zinc-300 bg-clip-text text-transparent mb-4 md:mb-5 tracking-tight">
             Frequently Asked Questions
           </h1>
-          <p className="text-lg text-gray-500 leading-relaxed max-w-2xl mx-auto">
-            Question's we get a lot
+          <p className="text-base md:text-lg text-gray-500 leading-relaxed max-w-2xl mx-auto">
+            Questions we get a lot
           </p>
         </motion.div>
 
         {/* FAQ Grid */}
         <motion.div
           variants={fadeInUpAnimation}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-auto"
         >
           {faqItems.map((item) => (
             <div
@@ -101,9 +101,9 @@ export const FAQSection = () => {
               {/* Question Button */}
               <button
                 onClick={() => toggleFAQ(item.id)}
-                className="w-full flex justify-between items-center p-6 text-left transition-colors duration-300"
+                className="w-full flex justify-between items-start p-4 md:p-6 text-left transition-colors duration-300"
               >
-                <span className="text-white font-medium text-base pr-4">
+                <span className="text-white font-medium text-sm md:text-base pr-4 leading-relaxed">
                   {item.question}
                 </span>
                 <span
@@ -122,8 +122,8 @@ export const FAQSection = () => {
                 }`}
               >
                 <div
-                  className={`px-6 transition-all duration-700 ${
-                    item.isExpanded ? "py-6" : "py-0"
+                  className={`px-4 md:px-6 transition-all duration-700 ${
+                    item.isExpanded ? "py-4 md:py-6" : "py-0"
                   }`}
                 >
                   <p className="text-gray-400 text-sm leading-relaxed">

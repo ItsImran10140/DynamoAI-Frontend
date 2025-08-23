@@ -12,12 +12,12 @@ export const TrustedBySection = () => {
       animate={isInView ? "show" : "hidden"}
       initial="hidden"
       variants={fadeInUpAnimation}
-      className="mt-[62px]"
+      className="mt-12 md:mt-16 lg:mt-[62px] px-2 md:px-4"
     >
       <img
-        className="w-full h-full object-contain z-0 border-[0.75px] border-neutral-700/40"
+        className="w-full h-auto object-contain z-0 border-[0.75px] border-neutral-700/40 rounded-lg md:rounded-xl"
         src="/saas.png"
-        alt="saas"
+        alt="SaaS Dashboard Preview"
       />
     </motion.div>
   );
