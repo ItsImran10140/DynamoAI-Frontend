@@ -68,7 +68,7 @@ export const TestimonialsSection = () => {
       </motion.div>
 
       {/* Add CSS for the spin animation */}
-      <style jsx>{`
+      <style>{`
         @keyframes spin {
           from {
             transform: rotate(0deg);
